@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+{% for url,scores in urls_list %}
+    <div>
+        <a target="_blank" href="{{ url }}">{{ scores }}  {{ url }}</a>
+    </div>
+{% endfor %}
+</body>
+</html>
