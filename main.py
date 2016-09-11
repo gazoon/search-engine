@@ -1,11 +1,12 @@
-from flask import Flask, request, render_template
-
-from indexing import Crawler
-from pymongo import MongoClient
+import pickle
 from urllib.parse import urlparse
 from urllib.request import urlopen
+
 from bson.binary import Binary
-import pickle
+from flask import Flask, request, render_template
+from pymongo import MongoClient
+
+from indexing import Crawler
 from searching import Searcher
 
 app = Flask(__name__)

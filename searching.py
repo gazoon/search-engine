@@ -1,7 +1,6 @@
 import re
-from collections import defaultdict
-
 import sys
+from collections import defaultdict
 
 
 def normalized_scores(scores, small_is_better=False):
